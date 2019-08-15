@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+  Quản Lí Tài Khoản
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <!-- CSS Files -->
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../assets/css/paper-dashboard.css?v=2.0.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/demo/demo.css" rel="stylesheet" />
+ 
+  
+
+  <style>
+      .site-footer
+     {
+       background-color:#26272b;
+       padding:45px 0 20px;
+       font-size:15px;
+       line-height:24px;
+       color:#737373;
+     }
+     .site-footer hr
+     {
+       border-top-color:#bbb;
+       opacity:0.5
+     }
+     .site-footer hr.small
+     {
+       margin:20px 0
+     }
+     .site-footer h6
+     {
+       color:#fff;
+       font-size:16px;
+       text-transform:uppercase;
+       margin-top:5px;
+       letter-spacing:2px
+     }
+     .site-footer a
+     {
+       color:#737373;
+     }
+     .site-footer a:hover
+     {
+       color:#3366cc;
+       text-decoration:none;
+     }
+     .footer-links
+     {
+       padding-left:0;
+       list-style:none
+     }
+     .footer-links li
+     {
+       display:block
+     }
+     .footer-links a
+     {
+       color:#737373
+     }
+     .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+     {
+       color:#3366cc;
+       text-decoration:none;
+     }
+     .footer-links.inline li
+     {
+       display:inline-block
+     }
+     .site-footer .social-icons
+     {
+       text-align:right
+     }
+     .site-footer .social-icons a
+     {
+       width:40px;
+       height:40px;
+       line-height:40px;
+       margin-left:6px;
+       margin-right:0;
+       border-radius:100%;
+       background-color:#33353d
+     }
+     .copyright-text
+     {
+       margin:0
+     }
+     @media (max-width:991px)
+     {
+       .site-footer [class^=col-]
+       {
+         margin-bottom:30px
+       }
+     }
+     @media (max-width:767px)
+     {
+       .site-footer
+       {
+         padding-bottom:0
+       }
+       .site-footer .copyright-text,.site-footer .social-icons
+       {
+         text-align:center
+       }
+     }
+     .social-icons
+     {
+       padding-left:0;
+       margin-bottom:0;
+       list-style:none
+     }
+     .social-icons li
+     {
+       display:inline-block;
+       margin-bottom:4px
+     }
+     .social-icons li.title
+     {
+       margin-right:15px;
+       text-transform:uppercase;
+       color:#96a2b2;
+       font-weight:700;
+       font-size:13px
+     }
+     .social-icons a{
+       background-color:#eceeef;
+       color:#818a91;
+       font-size:16px;
+       display:inline-block;
+       line-height:44px;
+       width:44px;
+       height:44px;
+       text-align:center;
+       margin-right:8px;
+       border-radius:100%;
+       -webkit-transition:all .2s linear;
+       -o-transition:all .2s linear;
+       transition:all .2s linear
+     }
+     .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+     {
+       color:#fff;
+       background-color:#29aafe
+     }
+     .social-icons.size-sm a
+     {
+       line-height:34px;
+       height:34px;
+       width:34px;
+       font-size:14px
+     }
+     .social-icons a.facebook:hover
+     {
+       background-color:#3b5998
+     }
+     .social-icons a.twitter:hover
+     {
+       background-color:#00aced
+     }
+     .social-icons a.linkedin:hover
+     {
+       background-color:#007bb6
+     }
+     .social-icons a.dribbble:hover
+     {
+       background-color:#ea4c89
+     }
+     @media (max-width:767px)
+     {
+       .social-icons li.title
+       {
+         display:block;
+         margin-right:0;
+         font-weight:600
+       }
+     }
+     .services ul{
+       list-style: none;
+       display: block;
+       margin: 50px 0;
+       text-align: center;
+       overflow: hidden;
+     }
+     
+     .services ul li{
+       float: left;
+       width: 300px;
+       margin-right: 80px;
+     }
+     
+     .services ul li:last-child{
+       margin-right: 0;
+     }
+     
+     .services ul li .s_icons,
+     .services ul li h3{
+       margin-bottom: 40px;
+     }
+     
+     .services ul li h3{
+       font-family: 'open_bold', arial;
+       font-weight: bold;
+       font-size: 22px;
+       color: #4d4d4d;
+       text-transform: uppercase;
+       letter-spacing: 50;
+     }
+     
+     .services ul li p{
+       font-family: 'open_regular', arial;
+       color: #727272;
+       font-size: 14px;
+       line-height: 22px;
+     }
+     
+     
+      </style>
+     
+
+</head>
+
+<body class="">
+    
+    
+      <div class="wrapper ">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+          <a href = "/product" class="navbar-brand"><img src = "http://downloadclipart.org/do-upload/clipart/2016-06/Belgium_flag_Heart_icon.png" 
+            style = "width:120px;" alt = ""></a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+              <div class="navbar-nav" style="padding-right: 20px; font-size: 20px; font-weight: bold">
+                  <a href = "/product" class="nav-item nav-link active">Home</a>
+                  <a href = "/product" class="nav-item nav-link">Quản lý sản phẩm</a>           
+                  <a href="/usermanager" class="nav-item nav-link" >Quản lý tài khoản</a>                
+              </div>
+              <form class="form-inline">
+                  <div class="input-group">                    
+                      <input type="text" class="form-control" placeholder="Search" name="search" value="">
+                      <div class="input-group-append">
+                          <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                      </div>
+                  </div>
+              </form>
+              <div class="navbar-nav">
+                  <a href="product/logout" class="nav-item nav-link"><%=user%><img src = "http://getdrawings.com/free-icon/logout-icon-55.png" 
+                    style = "width:40px; height: 60px" alt = ""> </a>
+                    
+              </div>
+              
+          </div>
+      </nav>
+    
+    <!-- jQuery library -->
+    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+       integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+       crossorigin = "anonymous">
+    </script>
+    
+    <!-- Popper -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+       integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+       crossorigin = "anonymous">
+    </script>
+    
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+       integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+       crossorigin = "anonymous">
+    </script>
+       
+       
+       
+    </div>
+    
+    <!-- jQuery library -->
+    <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+       integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+       crossorigin = "anonymous">
+    </script>
+    
+    <!-- Popper -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+       integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+       crossorigin = "anonymous">
+    </script>
+    
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+       integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+       crossorigin = "anonymous">
+    </script>
+    
+  <div class="wrapper ">
+   <%include sidebar%>
+    <div class="main-panel">
+      <!-- Navbar -->
+      
+      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-sm">
+
+
+</div> -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+        
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        Tài khoản
+                      </th>
+                      
+                    </thead>
+                    <tbody>
+                        <% if (item) { %>
+                          <% item.forEach(function(users,index){ %>
+                      <tr>
+                        <td>
+                          <%=users.email%>
+                        </td>
+                        <td>
+                            <%=users.name%>
+                 
+                        </td>
+                        <td>
+                            <%=users.password%>
+                            
+                        </td>
+                        <!-- <td class="text-right">
+                         
+                            <form action="usermanager/edituser?email=<%=users.email%>&id=<%=users._id%>" id="mform" method="POST">
+                              <input style="width: 30px;" type="number" minlength="0" maxlength="2" value="<%=users.__v%>" name="roleedit">
+                              <button type="submit"  class="btn btn-primary" >OK</button>
+                              
+                            </form>
+                            
+                  
+                        </td> -->
+                      
+                      </tr>
+                      <% }) %>
+                      <% } %>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Chart JS -->
+  <script src="../assets/js/plugins/chartjs.min.js"></script>
+  <!--  Notifications Plugin    -->
+  <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
+  <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+  <script src="../assets/demo/demo.js"></script>
+
+
+
+  <footer class="site-footer" style="clear: both">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+         <a href="#">Scanfcode</a>.
+            </p>
+          </div>
+  
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+  </footer>
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js"></script>
+    <script src="../assets/js/core/popper.min.js"></script>
+    <script src="../assets/js/core/bootstrap.min.js"></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <!-- Chart JS -->
+    <script src="../assets/js/plugins/chartjs.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../assets/js/plugins/bootstrap-notify.js"></script>
+    <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/paper-dashboard.min.js?v=2.0.0" type="text/javascript"></script>
+    <!-- Paper Dashboard DEMO methods, don't include it in your project! -->
+    <script src="../assets/demo/demo.js"></script>
+  
+</body>
+
+</html>
